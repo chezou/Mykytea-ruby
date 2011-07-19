@@ -1,6 +1,7 @@
 KyTea wrapper for ruby
+==========================
 
-README, v 1.0 2011/07/15 chezou
+2011/07/15 chezou
 
 Mykytea-ruby is a ruby wrapper module for KyTea, a general text analysis toolkit.
 KyTea is developed by KyTea Development Team
@@ -8,10 +9,13 @@ KyTea is developed by KyTea Development Team
 Detailed information of KyTea can be found at
 http://www.phontron.com/kytea
 
+Install Dependencies
+--------------------
 
 You need install KyTea and SWIG before build.
 
 To build Mykytea-ruby, run
+--------------------
 
    % swig -c++ -ruby mykytea.i
    % ruby extconf.rb
@@ -22,5 +26,9 @@ To build Mykytea-ruby, run
 
 
 How to use?
+--------------------
   See 'mykytea_test.rb' as a sample program.
 
+License
+--------------------
+MIT License
