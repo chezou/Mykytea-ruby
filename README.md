@@ -12,18 +12,19 @@ http://www.phontron.com/kytea
 Install Dependencies
 --------------------
 
-You need install KyTea and SWIG before build.
+You need to install KyTea before build.
 
 To build Mykytea-ruby, run
 --------------------
 
-   % swig -c++ -ruby mykytea.i
    % ruby extconf.rb
    % make
 
   (If you want to install, run)
    % sudo make install
 
+  (If you fail to make, please try to install SWIG and run)
+   % swig -c++ -ruby -I/usr/local/include mykytea.i
 
 How to use?
 --------------------
