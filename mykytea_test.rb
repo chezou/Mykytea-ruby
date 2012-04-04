@@ -3,10 +3,10 @@
 
 require './Mykytea'
 
-model_path = "/usr/local/share/kytea/model.bin"
-mk = Mykytea::Mykytea.new(model_path)
+opt = "-model /usr/local/share/kytea/model.bin -deftag UNKNOWN!!!"
+mk = Mykytea::Mykytea.new(opt)
 
-str = "今日はいい天気です。"
+str = "今日はいい天気です。1999"
 
 def show_tags(t)
   t.each do |word|
