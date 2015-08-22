@@ -11,5 +11,6 @@ before_install:
   - sudo ldconfig
 
 install:
+  - pushd ext && swig -Wall -c++ -ruby -I/usr/local/include mykytea.i && ruby extconf.rb && make && popd
   - bundle install
   - bundle exec rake install
