@@ -1,3 +1,15 @@
 language: ruby
 rvm:
   - 2.2.2
+
+before_install:
+  - sudo apt-get install swig
+  - wget http://www.phontron.com/kytea/download/kytea-0.4.7.tar.gz
+  - tar zxf kytea-0.4.7.tar.gz
+  - pushd kytea-0.4.7 && ./configure && make && sudo make install && popd
+  - rm -r kytea-0.4.7
+  - sudo ldconfig
+
+install:
+  - bundle install
+  - bundle exec rake install
