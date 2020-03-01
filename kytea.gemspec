@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["chezou+github@gmail.com"]
 
   spec.summary       = %q{An text analysis toolkit KyTea binding.}
-  spec.description   = "An text analysis toolkit KyTea binding."
+  spec.description   = %q{An text analysis toolkit KyTea binding.}
   spec.homepage      = "http://github.com/chezou/Mykytea-ruby"
   spec.license       = "MIT"
 
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.extensions    = ["ext/extconf.rb"]
   spec.require_paths = ["ext", "lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.9"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", ">= 2.1"
+  spec.add_development_dependency "rake", ">= 12.3.3"
   spec.add_development_dependency "rspec"
 end
