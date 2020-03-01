@@ -10,3 +10,4 @@ Makefile
 /pkg/
 /spec/reports/
 /tmp/
+vendor
