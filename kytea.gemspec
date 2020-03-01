@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["chezou+github@gmail.com"]
 
   spec.summary       = %q{An text analysis toolkit KyTea binding.}
-  spec.description   = "An text analysis toolkit KyTea binding."
+  spec.description   = %q{An text analysis toolkit KyTea binding.}
   spec.homepage      = "http://github.com/chezou/Mykytea-ruby"
   spec.license       = "MIT"
 
